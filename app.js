@@ -1,12 +1,8 @@
 //슬랙 봇 초기화하기
 const { RTMClient } = require('@slack/client');
-const token = process.env.SLACK_TOKEN || 'xoxb-523635159010-535750723474-pMD4RFYPFY4KugrTayMtIS6s';
+const token = 'xoxb-523635159010-535750723474-bwFv2yc0PzA3BZMNf1v8tKcD';
 const rtm = new RTMClient(token);
 rtm.start();
-
-
-//슬랙 봇이 모든 메시지를 받도록 하기
-// rtm.sendMessage("인기있는 글이야? 그럼 나도 껴야지!", message.channel)
 
 var cheerio = require('cheerio');
 var request = require('request');
